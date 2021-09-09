@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Game</title>
+</head>
+<body id="body">
+
+    <div class="container">
+        <div class="closeToggle">
+            <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="instructions">
+            <h2 class="userNameDisplay"></h2>
+            <div class="command">
+                <h4>Please follow this simple instruction</h4>
+                <p>/text : this is you pass message to console</p>
+
+                <p>/theme : you can change the background of the console</p>
+
+                <p>/help : for instructions</p>
+
+                <p>/anim : animation of text or any thing</p>
+
+                <p>/contact : Contact us for more suggestion</p>
+                <p>/text : this is you pass message to console</p>
+            </div>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" list="datalist" onkeyup="show(this.value)" class="sample" placeholder="Input some command here">
+
+            <datalist id="datalist">
+
+            </datalist>
+            <button class="btn">Run</button>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
